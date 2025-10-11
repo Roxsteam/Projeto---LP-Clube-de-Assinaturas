@@ -21,11 +21,11 @@ align-items: center;
 justify-content: space-between;
 margin-inline: 10rem;
 margin-top: 3.5rem;
-border: 2px solid var(--shape-stroke);
+
 }
 
 & nav button {
-
+  position: relative;
   height: 2.5rem;
   width:5.56rem;
   border-radius: 0.5rem;
@@ -33,9 +33,59 @@ border: 2px solid var(--shape-stroke);
   background: var(--pink-dark);
   font: 700 .875rem "Raleway", 'sans-serif';
   color: var(--text-title);
-  cursor: pointer; 
-  
+  cursor: pointer;   
+
 }
+
+
+& nav button span {
+  position: relative;
+  z-index: 2;
+}
+
+& nav button::after {
+position: absolute;
+height: 2.5rem;
+  width:5.56rem;
+content: "";
+background: transparent;
+  border-radius: 50%;
+  border: none;  
+  z-index: 1;
+  top:0;
+  left:0;  
+  opacity: 0.5;
+  transform: scale(0.01);
+  transition:
+  transform 450ms ease,
+  border-radius 450ms ease,
+  background 450ms ease;  
+}
+
+& nav button:hover::after {
+
+  transform: scale(1);
+background: var(--pink-light);
+border-radius: 0.5rem;
+    z-index: 1;
+
+}
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
 
 
 & div.title {
