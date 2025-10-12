@@ -1,0 +1,59 @@
+.contain {
+  max-width: 75rem;
+  width: 100%;
+  height: 25rem;
+  margin-inline:auto;
+  margin-top: 6rem;
+  box-sizing: border-box;
+}
+
+.contain img[src*="spellbook"] {
+    margin-inline: auto;
+    display: block; 
+    height: 5.5rem;
+    width: 5.5rem;
+    transform: rotateZ(30deg);   
+}
+
+.contain img[src*="planchette"] {
+    height: 5rem;
+    width: 5rem;
+    transform: rotateY(-180deg) rotateZ(40deg);
+
+}
+
+.contain img[src*="crystal"] {
+   
+    height: 4.5rem;
+    width: 4.5rem;  
+    transform: rotateZ(-14deg); 
+}
+
+.contain .images {
+  display: flex;
+  justify-content: space-between;}
+  
+
+.text {
+  margin-inline: auto;
+  text-align: center;
+  /* margin-top: 2rem; */
+  /* margin-bottom: 2rem;   */
+  width: 71rem;  
+}
+
+.text span {
+  font: var(--tt-subtitle);
+  color: var(--text-body)
+
+}
+
+.contain .text p {
+  color: azure;
+}
+
+.text .destaque {
+  color: var(--blue-mid);
+  font-weight: 800;
+}
+
