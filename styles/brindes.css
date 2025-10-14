@@ -13,12 +13,16 @@
     height: 5.5rem;
     width: 5.5rem;
     transform: rotateZ(30deg);   
+    opacity: 0;
+   animation: aparecerSpellbook 1s forwards;
+
 }
 
 .contain img[src*="planchette"] {
     height: 5rem;
     width: 5rem;
     transform: rotateY(-180deg) rotateZ(40deg);
+    opacity: 0;
 
 }
 
@@ -27,6 +31,7 @@
     height: 4.5rem;
     width: 4.5rem;  
     transform: rotateZ(-14deg); 
+    opacity: 0;
 }
 
 .contain .images {
@@ -36,15 +41,19 @@
 
 .text {
   margin-inline: auto;
-  text-align: center;
+  /* text-align: center; */
   /* margin-top: 2rem; */
   /* margin-bottom: 2rem;   */
-  width: 71rem;  
+  /* width: auto; */
+  padding: 0;   
 }
+
+
 
 .text span {
   font: var(--tt-subtitle);
-  color: var(--text-body)
+  color: var(--text-body);
+  opacity: 0.75;
 
 }
 
@@ -52,8 +61,98 @@
   color: azure;
 }
 
-.text .destaque {
-  color: var(--blue-mid);
-  font-weight: 800;
+.contain .text .destaque1,
+.contain .text .destaque2,
+.contain .text .destaque3 {
+  color: var(--text-body);
+  font-weight: 700;
 }
+
+
+
+.contain:hover img[src*="spellbook"] {
+ opacity: 1;
+  transition-property: opacity;
+  transition-duration: 1s;
+  transition-delay: 200ms;
+}
+
+.contain:hover img[src*="planchette"]  {
+ opacity: 1;
+  transition-property: opacity;
+  transition-duration: 1s;
+  transition-delay: 800ms;
+}
+
+.contain:hover img[src*="crystal"] {
+ opacity: 1;
+  transition-property: opacity;
+  transition-duration: 1s;
+  transition-delay: 1.3s;
+}
+
+.contain:hover span:nth-child(1) {
+ opacity: 1;
+  transition-property: opacity;
+  transition-duration: 1s;
+  transition-delay: 200ms;  
+ }
+
+ .contain:hover span:nth-child(2) {
+ opacity: 1;
+  transition-property: opacity;
+  transition-duration: 1s;
+  transition-delay: 800ms;  
+ }
+
+ .contain:hover span:nth-child(3) {
+ opacity: 1;
+  transition-property: opacity;
+  transition-duration: 1s;
+  transition-delay: 1.5s;  
+ }
+
+
+
+.text .destaque1 {
+transition-property: opacity, color, font-weight;
+transition-duration: 1s, 1s, 1s;
+transition-delay: 1s, 2s, 1s;
+
+}
+
+.text .destaque2 {
+transition-property: opacity, color, font-weight;
+transition-duration: 1s, 1s, 1s;
+transition-delay: 1s, 2s, 1s;
+}
+
+.text .destaque3 {
+transition-property: opacity, color, font-weight;
+transition-duration: 1s, 1s, 1s;
+transition-delay: 1s, 2s, 1s;
+}
+    
+    
+ .contain:hover .text .destaque1 {
+
+  opacity: 1;  
+  color: var(--blue-mid);
+  font-weight: 700;
+ 
+  }
+.contain:hover .text .destaque2 {
+
+  opacity: 1;  
+  color: var(--blue-mid);
+  font-weight: 700;
+  }
+.contain:hover .text .destaque3 {
+
+  opacity: 1;  
+  color: var(--blue-mid);
+  font-weight: 700;
+  }
+
+
 
