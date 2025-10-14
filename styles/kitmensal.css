@@ -1,0 +1,61 @@
+
+.titulo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  margin-inline: auto;
+  margin-top: 14.68rem;    
+}
+
+.titulo > p {
+  font: var(--title-md);
+  color: var(--text-body);
+  margin-inline: 6px;
+  padding: 0;
+
+}
+
+
+
+  .kitmensal span {
+
+    font: var(--body-md);
+    color: var(--text-body);
+    display: flex;
+    justify-content: center;
+    /* margin-inline: auto; */
+    margin-top: 0;
+    opacity: 0.7;
+    margin-bottom: 20rem;
+     
+
+  }
+
+ 
+.books {
+  width: auto;
+  height: 57.5rem;  
+  position: relative;
+} 
+
+ .castle img[src*="book"]{
+    position: absolute;
+    top:0;
+    left:50rem;
+  }
+
+  .castle img[src*="arrowbook"]{
+    position: absolute;
+    top:20rem;
+    left:0;
+
+    
+ 
+  }
+
+ 
+  .castle span{
+   
+  }
+
