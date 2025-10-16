@@ -13,7 +13,7 @@
     height: 5.5rem;
     width: 5.5rem;
     transform: rotateZ(30deg);   
-    opacity: 0;
+    scale: 0;
    animation: aparecerSpellbook 1s forwards;
 
 }
@@ -21,23 +21,21 @@
 .contain img[src*="planchette"] {
     height: 5rem;
     width: 5rem;
-    transform: rotateY(-180deg) rotateZ(40deg);
-    opacity: 0;
-
+    transform: rotateY(-180deg) rotateZ(20deg);
+    scale: 0;
 }
 
-.contain img[src*="crystal"] {
-   
+.contain img[src*="crystal"] {   
+ 
     height: 4.5rem;
     width: 4.5rem;  
     transform: rotateZ(-14deg); 
-    opacity: 0;
+    scale: 0;
 }
 
 .contain .images {
   display: flex;
-  justify-content: space-between;}
-  
+  justify-content: space-between;}  
 
 .text {
   margin-inline: auto;
@@ -45,114 +43,101 @@
   /* margin-top: 2rem; */
   /* margin-bottom: 2rem;   */
   /* width: auto; */
-  padding: 0;   
-}
-
-
+  padding: 0; }
 
 .text span {
   font: var(--tt-subtitle);
   color: var(--text-body);
-  opacity: 0.75;
-
-}
+  opacity: 0.75;}
 
 .contain .text p {
-  color: azure;
-}
+  color: azure;}
 
 .contain .text .destaque1,
 .contain .text .destaque2,
 .contain .text .destaque3 {
   color: var(--text-body);
-  font-weight: 700;
-}
+  font-weight: 700;}
 
 
 
 .contain:hover img[src*="spellbook"] {
- opacity: 1;
-  transition-property: opacity;
-  transition-duration: 1s;
-  transition-delay: 200ms;
+  scale:1;
+  transition-property: scale;
+  transition-duration: 400ms;
+  transition-delay: 0s;
 }
+.contain img[src*="spellbook"]:hover {
+  scale: 1.2;
+  transform: rotateZ(40deg);  
+}
+
 
 .contain:hover img[src*="planchette"]  {
- opacity: 1;
-  transition-property: opacity;
-  transition-duration: 1s;
-  transition-delay: 800ms;
-}
+  scale:1;
+  transition-property: scale;
+  transition-duration: 400ms;
+  transition-delay: 600ms;}
+
+.contain img[src*="planchette"]:hover {
+  scale: 1.2;
+   transform: rotateZ(1deg) rotateY(-180deg);
+   transition-property: transform ease;
+   transition-delay: 80ms;}
+
 
 .contain:hover img[src*="crystal"] {
- opacity: 1;
-  transition-property: opacity;
-  transition-duration: 1s;
-  transition-delay: 1.3s;
+  scale:1;
+  transition-property: scale;
+  transition-duration: 400ms;
+  transition-delay: 1.2s;
 }
+.contain img[src*="crystal"]:hover { 
+  transform: scale(1.2) rotateZ(2deg);
+  transition-property: transform ease-in-out;
+}
+
 
 .contain:hover span:nth-child(1) {
- opacity: 1;
+  opacity: 1;
   transition-property: opacity;
-  transition-duration: 1s;
-  transition-delay: 200ms;  
+  transition-duration: 400ms;
+  transition-delay: 0s;  
  }
-
  .contain:hover span:nth-child(2) {
- opacity: 1;
+  opacity: 1;
   transition-property: opacity;
-  transition-duration: 1s;
-  transition-delay: 800ms;  
+  transition-duration: 400ms;
+  transition-delay: 600ms;  
  }
-
  .contain:hover span:nth-child(3) {
- opacity: 1;
+  opacity: 1;
   transition-property: opacity;
-  transition-duration: 1s;
-  transition-delay: 1.5s;  
+  transition-duration: 400ms;
+  transition-delay: 1.2s;  
  }
 
 
-
-.text .destaque1 {
-transition-property: opacity, color, font-weight;
-transition-duration: 1s, 1s, 1s;
-transition-delay: 1s, 2s, 1s;
-
+.contain:hover .text .destaque1 {
+color: var(--blue-mid);
+transition-property: color;
+transition-duration: 400ms;
+transition-delay: 0;
 }
-
-.text .destaque2 {
-transition-property: opacity, color, font-weight;
-transition-duration: 1s, 1s, 1s;
-transition-delay: 1s, 2s, 1s;
-}
-
-.text .destaque3 {
-transition-property: opacity, color, font-weight;
-transition-duration: 1s, 1s, 1s;
-transition-delay: 1s, 2s, 1s;
-}
-    
-    
- .contain:hover .text .destaque1 {
-
-  opacity: 1;  
-  color: var(--blue-mid);
-  font-weight: 700;
- 
-  }
 .contain:hover .text .destaque2 {
-
-  opacity: 1;  
-  color: var(--blue-mid);
-  font-weight: 700;
-  }
+color: var(--blue-mid);
+transition-property: color;
+transition-duration: 400ms;
+transition-delay: 600ms;
+}
 .contain:hover .text .destaque3 {
+color: var(--blue-mid);
+transition-property: color;
+transition-duration: 400ms;
+transition-delay: 1.2s;
+}
 
-  opacity: 1;  
-  color: var(--blue-mid);
-  font-weight: 700;
-  }
+
 
 
 
