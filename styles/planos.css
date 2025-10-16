@@ -1,0 +1,117 @@
+
+.planos {
+  height: 77.125rem;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  border: 2px solid rgb(0, 255, 13);
+}
+
+.planos .assinatura {
+
+  width: 18.375rem;
+  height: 4.75rem;
+  margin-top: 12.125rem;
+  margin-bottom: 3.5rem;
+  margin-inline: auto;
+  border: 2px solid rgb(206, 24, 130);
+
+}
+
+.planos .assinatura p {
+  font: var(--title-sm);
+  color: var(--text-title);
+  text-align: center;
+}
+
+.planos .tipos-planos {
+
+  width: 65.652rem;
+  height: 37.875rem;
+  margin-inline: auto;
+  margin-bottom: 18.875rem;
+  border: 5px solid rgb(255, 0, 0);
+
+}
+
+
+
+.planos .tipos-planos .semestral {
+
+  width: 18rem;
+  height: 26rem;
+  border-radius: 24px;
+  border: 2px solid var(--blue-mid);
+  background: var(--shape-base);
+
+  margin-inline: auto;
+  margin-top: 5.125rem;
+ 
+}
+
+.semestral header {
+width: 14rem;
+height: 7.375rem;
+margin-inline: 2rem;
+margin-top: 2rem;
+  & h1 {
+      font: var(--title-xs);
+    color: var(--pink-light);
+    margin-bottom: 1.5rem;
+ }
+
+  & .price span:nth-child(1) {
+  color: var(--text-title);
+  font: var(--title-md);
+ }
+
+  & .price span:nth-child(2) {
+  color: var(--text-title);
+  font: var(--title-xs);
+  
+ }
+
+  & .price p {
+   margin-top: 0.5rem;
+   color: var(--text-label);
+  font: var(--body-sm);
+  opacity: 0.5;
+ }
+}
+
+.semestral .info {
+  display: block;
+  margin-inline: 2rem;
+  margin-top: 4.375rem;
+}
+
+.semestral ul li {
+font: var(--body-xs);
+color: var( --text-body);
+list-style: none;
+
+
+display: flex;
+align-items: center;
+gap: 0.5rem;
+}
+
+.semestral button {
+
+  height: 2.5rem;
+  width: 14rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  color: var(--text-title);
+  font: var(--tt-button);
+  background: var(--pink-dark);
+  margin-top: 0.5rem;
+
+}
+
+
+
+
+
+
