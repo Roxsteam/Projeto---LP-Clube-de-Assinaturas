@@ -60,18 +60,167 @@
   height: 2rem;
   width: 10.875rem ;
   position: absolute;
-  z-index: 1;
+  z-index: -1;
   top:-1.2rem;
   left:-8.5rem;
+
+  transform: translateY(10rem) translateX(18rem);
+
+  transition-property: transform;
+  transition-duration: 500ms;
+  transition-timing-function: ease;
  }
 
  .kitmensal figure span {
   position: absolute;
-  z-index: 1;
+  z-index: -1;
   top: -4rem;
   left: -13.5rem;
   color: var(--text-title);
   font: var(--body-md);
   opacity: 0.8;
 
+  transform: translateY(10rem) translateX(18rem);
+   transition-property: transform;
+  transition-duration: 500ms;
+  transition-timing-function: ease;
  }
+
+.kitmensal figure:hover img[src*="arrowbook"]{
+transform: translateY(0rem) translateX(0rem);
+}
+
+.kitmensal figure:hover > span:first-of-type{
+transform: translateY(0rem) translateX(0rem);
+}
+
+
+
+
+.kitmensal .arrowpin {
+  position: relative;
+  z-index: -1;
+   
+    height: 15.875rem;
+    width: 13.875rem ;
+    top: -40%;
+    left: 30%;
+  transition-property: transform;
+  transition-duration: 500ms;
+  transition-timing-function: ease;
+}
+
+  .kitmensal img[src*="pin"] {
+  
+    position: absolute;
+    transform: rotateX(18deg) rotateZ(-10deg);
+     width: 100%;
+    height: 100%;
+  }
+
+    .kitmensal img[src*="arrowpin"] {
+    height: 7.9375rem;
+    width: 6.553125rem;
+    position: absolute;    
+    top:-4rem;
+    left: -4rem;
+  }
+
+    .kitmensal .arrowpin span {
+      position: absolute;
+      z-index: 1;
+      top: -16rem;
+      left: -24rem;
+    }
+
+    .kitmensal figure:hover .arrowpin {       
+      transform: translateX(-17rem) translateY(5rem);   
+    }
+
+
+    .kitmensal .book-yellow {
+      width: 10.75rem;
+      height: 33.5rem;
+      padding: 0;
+      position: absolute;
+      top: 3rem;
+      left: 10rem;
+      z-index: -1;
+      transition-property: transform;
+      transition-duration: 500ms;
+      transition-timing-function: ease;
+      
+
+    }
+
+    .kitmensal .book-yellow img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;            
+    }
+
+
+    .kitmensal figure:hover .book-yellow {       
+      transform: translateX(15rem) translateY(-8rem) rotateX(20deg) rotateZ(10deg);   
+    }
+
+    .kitmensal .book-purple {
+      width: 10.75rem;
+      height: 33.5rem;
+      padding: 0;
+           top:-52rem;
+      left: 8rem;
+      z-index: -1;
+      position: relative;
+      transition-property: transform;
+      transition-duration: 500ms;
+      transition-timing-function: ease;
+
+
+    }
+
+    .kitmensal .book-purple img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transform: rotateZ(22deg);
+    }
+
+    .kitmensal .book-purple img[src*="arbook"] {
+
+      width: 9.09rem;
+      height: 9.468rem;
+      position: absolute;
+      bottom: 1rem;
+      left: 0;
+      transform: rotateZ(-10deg);
+      transition-property: bottom;
+      transition-duration: 500ms;
+      transition-delay: 0;      
+      transition-timing-function: ease;    
+
+    }
+
+    .kitmensal .book-purple span {
+
+     transition-property: transform;
+      transition-duration: 500ms;
+      transition-timing-function: ease;
+    }
+
+    .kitmensal figure:hover .book-purple span {
+      transform: translateY(48rem) translateX(10rem);
+
+    }
+
+
+    .kitmensal figure:hover .book-purple {
+
+      transform: translateX(25rem);
+      
+    }
+
+    .kitmensal figure:hover .book-purple img[src*="arbook"] {
+
+      bottom: -8rem;
+    }
