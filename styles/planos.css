@@ -31,6 +31,7 @@
   margin-inline: auto;
   margin-bottom: 18.875rem;
   border: 5px solid rgb(255, 0, 0);
+  position: relative;
 
 }
 
@@ -41,8 +42,8 @@
   width: 18rem;
   height: 26rem;
   border-radius: 24px;
-  border: 2px solid var(--blue-mid);
-  background: var(--shape-base);
+  border: none;
+  background: var(--shape-hover);
 
   margin-inline: auto;
   margin-top: 5.125rem;
@@ -53,7 +54,7 @@
 width: 14rem;
 height: 7.375rem;
 margin-inline: 2rem;
-margin-top: 2rem;
+padding-top:2rem ;
   & h1 {
       font: var(--title-xs);
     color: var(--pink-light);
@@ -75,7 +76,7 @@ margin-top: 2rem;
    margin-top: 0.5rem;
    color: var(--text-label);
   font: var(--body-sm);
-  opacity: 0.5;
+  
  }
 }
 
@@ -85,15 +86,27 @@ margin-top: 2rem;
   margin-top: 4.375rem;
 }
 
+.semestral ul {
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+
+
 .semestral ul li {
 font: var(--body-xs);
-color: var( --text-body);
+color: var(--text-body);
 list-style: none;
+
 
 
 display: flex;
 align-items: center;
 gap: 0.5rem;
+
 }
 
 .semestral button {
@@ -107,8 +120,237 @@ gap: 0.5rem;
   font: var(--tt-button);
   background: var(--pink-dark);
   margin-top: 0.5rem;
+}
+
+.semestral {
+  position: relative;
 
 }
+
+.semestral .popular {
+
+  width: 5.625rem;
+  height: 1.875rem;
+  
+  border-radius: 999px;
+  background-color: var(--shape-stroke);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: absolute;
+  top: 1.49rem;
+  right: 1.52rem;
+
+  & span {
+    font: var(--tt-tag);
+    color: var(--text-body);   
+   
+  }
+}
+.semestral img[src*="Bunny"] {
+
+ position: absolute;
+ top: -3.1rem;
+ left: 2rem;
+}
+
+
+
+
+
+
+.planos .tipos-planos .anual {
+
+  width: 18rem;
+  height: 26rem;
+  border-radius: 24px;
+  border: none;
+  background: var(--shape-base);
+
+  margin-inline: auto;
+  margin-top: 5.125rem;
+  transform: rotateZ(8deg);
+  
+  position: absolute;
+  top:2.5rem;
+  left: 42rem;
+  z-index: -1;
+ 
+
+}
+
+.anual header {
+width: 14rem;
+height: 7.375rem;
+margin-inline: 2rem;
+padding-top:2rem ;
+  & h1 {
+      font: var(--title-xs);
+    color: var(--blue-light);
+    margin-bottom: 1.5rem;
+ }
+
+  & .price span:nth-child(1) {
+  color: var(--text-title);
+  font: var(--title-md);
+ }
+
+  & .price span:nth-child(2) {
+  color: var(--text-title);
+  font: var(--title-xs);
+  
+ }
+
+  & .price p {
+   margin-top: 0.5rem;
+   color: var(--text-label);
+  font: var(--body-sm);
+  
+ }
+}
+
+.anual .info {
+  display: block;
+  margin-inline: 2rem;
+  margin-top: 2.5rem;
+}
+
+.anual ul {
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+
+
+.anual ul li {
+font: var(--body-xs);
+color: var(--text-body);
+list-style: none;
+
+
+
+display: flex;
+align-items: center;
+gap: 0.5rem;
+
+}
+
+.anual button {
+
+  height: 2.5rem;
+  width: 14rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  color: var(--text-title);
+  font: var(--tt-button);
+  background: var(--blue-dark);
+  margin-top: 0.5rem;
+}
+
+
+
+.planos .tipos-planos .mensal {
+
+  width: 18rem;
+  height: 26rem;
+  border-radius: 24px;
+  border: none;
+  background: var(--shape-base);
+
+  margin-inline: auto;
+  margin-top: 5.125rem;
+  transform: rotateZ(-8deg);
+  
+  position: absolute;
+  top: 3rem;
+  left: 5.5rem;
+  z-index: -1;
+
+ 
+
+}
+
+.mensal header {
+width: 14rem;
+height: 7.375rem;
+margin-inline: 2rem;
+padding-top:2rem ;
+  & h1 {
+      font: var(--title-xs);
+    color: var(--blue-light);
+    margin-bottom: 1.5rem;
+ }
+
+  & .price span:nth-child(1) {
+  color: var(--text-title);
+  font: var(--title-md);
+ }
+
+  & .price span:nth-child(2) {
+  color: var(--text-title);
+  font: var(--title-xs);
+  
+ }
+
+  & .price p {
+   margin-top: 0.5rem;
+   color: var(--text-label);
+  font: var(--body-sm);
+  
+ }
+}
+
+.mensal .info {
+  display: block;
+  margin-inline: 2rem;
+  margin-top: 2.5rem;
+}
+
+.mensal ul {
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+
+
+.mensal ul li {
+font: var(--body-xs);
+color: var(--text-body);
+list-style: none;
+
+
+
+display: flex;
+align-items: center;
+gap: 0.5rem;
+
+}
+
+.mensal button {
+
+  height: 2.5rem;
+  width: 14rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  color: var(--text-title);
+  font: var(--tt-button);
+  background: var(--blue-dark);
+  margin-top: 0.5rem;
+}
+
+
+
+
+
 
 
 
