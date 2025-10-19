@@ -124,6 +124,7 @@ gap: 0.5rem;
 
 .semestral {
   position: relative;
+  z-index: 2;
 
 }
 
@@ -165,7 +166,7 @@ gap: 0.5rem;
   width: 18rem;
   height: 26rem;
   border-radius: 24px;
-  border: none;
+  border: 1px solid var(--shape-stroke);
   background: var(--shape-base);
 
   margin-inline: auto;
@@ -175,7 +176,7 @@ gap: 0.5rem;
   position: absolute;
   top:2.5rem;
   left: 42rem;
-  z-index: -1;
+  z-index: 1;
  
 
 }
@@ -259,7 +260,7 @@ gap: 0.5rem;
   width: 18rem;
   height: 26rem;
   border-radius: 24px;
-  border: none;
+  border: 1px solid var(--shape-stroke);
   background: var(--shape-base);
 
   margin-inline: auto;
@@ -267,11 +268,9 @@ gap: 0.5rem;
   transform: rotateZ(-8deg);
   
   position: absolute;
-  top: 3rem;
+  top: 2.5rem;
   left: 5.5rem;
-  z-index: -1;
-
- 
+  z-index: 1;
 
 }
 
@@ -317,6 +316,7 @@ padding-top:2rem ;
   flex-direction: column;
   gap: 0.75rem;
   margin-bottom: 1.5rem;
+  margin-top: 5.5rem;
 }
 
 
@@ -347,10 +347,49 @@ gap: 0.5rem;
   margin-top: 0.5rem;
 }
 
+.mensal .small-mensal {
+  position: absolute;
+  top: 1rem;
+  left: -2rem;
+  transform: rotateZ(-8deg);
+}
+
+.mensal .big-mensal {
+  position: absolute;
+  top: -1.5rem;
+  left: -1.5rem;
+  transform: rotateZ(-8deg);
+}
 
 
+.anual .small-anual {
+  position: absolute;
+  bottom: -1.5rem;
+  right: 0rem;
+  transform: rotateZ(8deg);
+}
+
+.anual .big-anual {
+  position: absolute;
+  bottom: -1rem;
+  right: -3rem;
+  transform: rotateZ(8deg);
+}
 
 
+.planos .tipos-planos .mensal:hover {
+ 
+  transform: translateY(-1rem) rotateZ(-8deg);
+  box-shadow: 0 0 66px 0 rgba(53,139,185,0.10);
+  background: var(--shape-hover);
+  border: none;
+}
+
+
+.planos .tipos-planos .mensal:hover .small-mensal {
+
+  transform: rotateZ(2rem);
+}
 
 
 
