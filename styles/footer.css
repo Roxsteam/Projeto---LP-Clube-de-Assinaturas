@@ -1,0 +1,86 @@
+footer {
+padding: 0;
+margin: 0;
+border: 2px solid blue;
+ height: 25.93rem;
+
+ display: flex;
+ justify-content: space-between;
+ align-items: flex-start;
+ position: relative;
+ z-index: 0;
+}
+
+
+.brand{
+ width: 16.5rem;
+ height: 8.125rem;
+ margin-top: 10.625rem;
+ margin-left: 10rem;
+ border: 2px solid salmon;
+ position: relative;
+  z-index: 1;
+ 
+ & img[src*="logo-horizontal"] {
+  width: 100%;
+
+  
+ }
+
+ & .divider {
+  width: 16.5rem;
+  height: 0.1rem;
+  background: var(--shape-stroke);
+  margin-top: 0.75rem;
+ }
+
+ & .social {
+
+  display: flex;
+  height: 2.5rem;
+ } 
+}
+
+.social button {
+
+  height: 2.5rem;
+  width: 2.5rem;
+  }
+
+
+footer::before {
+  content: "";
+  inset: 0;
+  position: absolute;
+  background-image: url(/assets/Background-Vector.svg);
+  z-index: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.links {
+ width: 19.5rem;
+ height: 8.9375rem;
+  margin-top: 10.625rem;
+ margin-right: 10rem;
+ border: 2px solid yellow;
+
+  position: relative;
+  z-index: 1;
+
+  display: flex;
+  justify-content: space-between;
+
+}
