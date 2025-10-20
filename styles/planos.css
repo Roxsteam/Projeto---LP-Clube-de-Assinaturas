@@ -46,8 +46,15 @@
   background: var(--shape-hover);
 
   margin-inline: auto;
-  margin-top: 5.125rem;
- 
+  margin-top: 5.125rem; 
+  transition: transform 800ms ease;
+}
+
+
+.semestral:hover {
+
+  transform: translateY(-1rem);
+  box-shadow: 0 0 66px 0 rgba(53,139,185,0.10)
 }
 
 .semestral header {
@@ -171,15 +178,19 @@ gap: 0.5rem;
 
   margin-inline: auto;
   margin-top: 5.125rem;
-  transform: rotateZ(8deg);
   
-  position: absolute;
-  top:2.5rem;
-  left: 42rem;
+  
+  position: absolute; 
   z-index: 1;
+  top:2rem;
+  left: 42rem;
+  transform: rotateZ(8deg);
+   transition-property: transform box-shadow border z-index;
+  transition-duration: 800ms; 
+ }
+
  
 
-}
 
 .anual header {
 width: 14rem;
@@ -265,14 +276,23 @@ gap: 0.5rem;
 
   margin-inline: auto;
   margin-top: 5.125rem;
-  transform: rotateZ(-8deg);
+ 
   
   position: absolute;
-  top: 2.5rem;
-  left: 5.5rem;
-  z-index: 1;
+   z-index: 1;
 
-}
+   top:2rem;
+  right: 42rem;
+  transform: rotateZ(-8deg);
+
+  transition-property: transform box-shadow border z-index;
+  transition-duration: 800ms; 
+} 
+
+
+
+
+
 
 .mensal header {
 width: 14rem;
@@ -352,6 +372,8 @@ gap: 0.5rem;
   top: 1rem;
   left: -2rem;
   transform: rotateZ(-8deg);
+  transition-property: transform;
+  transition-duration: 800ms; 
 }
 
 .mensal .big-mensal {
@@ -359,6 +381,8 @@ gap: 0.5rem;
   top: -1.5rem;
   left: -1.5rem;
   transform: rotateZ(-8deg);
+  transition-property: transform;
+  transition-duration: 800ms; 
 }
 
 
@@ -367,6 +391,8 @@ gap: 0.5rem;
   bottom: -1.5rem;
   right: 0rem;
   transform: rotateZ(8deg);
+  transition-property: transform;
+  transition-duration: 800ms; 
 }
 
 .anual .big-anual {
@@ -374,7 +400,39 @@ gap: 0.5rem;
   bottom: -1rem;
   right: -3rem;
   transform: rotateZ(8deg);
+  transition-property: transform;
+  transition-duration: 800ms; 
 }
+
+
+.planos .tipos-planos .anual:hover {
+ 
+  transform: translateY(-1.5rem) rotateZ(8deg);
+  box-shadow: 0 0 66px 0 rgba(53,139,185,0.10);
+  background: var(--shape-hover);
+  border: none;
+  z-index: 3;
+}
+
+.anual:hover .small-anual {
+  transform: rotateZ(-30deg);
+}
+
+.anual:hover .big-anual {
+  transform: rotateZ(30deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .planos .tipos-planos .mensal:hover {
@@ -383,12 +441,17 @@ gap: 0.5rem;
   box-shadow: 0 0 66px 0 rgba(53,139,185,0.10);
   background: var(--shape-hover);
   border: none;
+  z-index: 3;
 }
 
 
-.planos .tipos-planos .mensal:hover .small-mensal {
+ .mensal:hover .small-mensal {
+  transform: rotateZ(30deg);
+}
 
-  transform: rotateZ(2rem);
+ .mensal:hover .big-mensal {
+
+  transform: rotateZ(-30deg);
 }
 
 
