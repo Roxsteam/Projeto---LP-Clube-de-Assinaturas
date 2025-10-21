@@ -1,16 +1,18 @@
 footer {
-padding: 0;
-margin: 0;
+  padding: 0;
+  margin: 0;
+  height: 25.93rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+  z-index: 0;
+}
 
- height: 25.93rem;
+.vector-background {
 
- background-color: var(--shape-base);
-
- display: flex;
- justify-content: space-between;
- align-items: flex-start;
- position: relative;
- z-index: 0;
+  position: absolute;
+  z-index: -3;
 }
 
 

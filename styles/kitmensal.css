@@ -44,9 +44,10 @@
 }
  .kitmensal figure {
   margin-inline: auto ;
-  width: 29.1875rem;
+  width: 32rem;
   height: 38.56rem;
-  /* overflow: hidden; */
+  overflow: visible;
+  29.1875rem;
 
   position: relative;
  }
@@ -182,7 +183,7 @@ transform: translateY(0rem) translateX(0rem);
     .kitmensal .book-purple img {
       width: 100%;
       height: 100%;
-      object-fit: cover;
+      /* object-fit: cover; */
       transform: rotateZ(22deg);
     }
 
@@ -194,7 +195,7 @@ transform: translateY(0rem) translateX(0rem);
       bottom: 1rem;
       left: 0;
       transform: rotateZ(-10deg);
-      transition-property: bottom;
+      transition-property: bottom z-index;
       transition-duration: 500ms;
       transition-delay: 0;      
       transition-timing-function: ease;    
@@ -223,4 +224,6 @@ transform: translateY(0rem) translateX(0rem);
     .kitmensal figure:hover .book-purple img[src*="arbook"] {
 
       bottom: -8rem;
+     
+     
     }
