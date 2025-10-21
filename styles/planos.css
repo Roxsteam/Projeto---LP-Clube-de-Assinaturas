@@ -4,7 +4,7 @@
   width: 100%;
   padding: 0;
   margin: 0;
-  border: 2px solid rgb(0, 255, 13);
+  
 }
 
 .planos .assinatura {
@@ -14,7 +14,7 @@
   margin-top: 12.125rem;
   margin-bottom: 3.5rem;
   margin-inline: auto;
-  border: 2px solid rgb(206, 24, 130);
+
 
 }
 
@@ -30,7 +30,7 @@
   height: 37.875rem;
   margin-inline: auto;
   margin-bottom: 18.875rem;
-  border: 5px solid rgb(255, 0, 0);
+ 
   position: relative;
 
 }
@@ -127,7 +127,37 @@ gap: 0.5rem;
   font: var(--tt-button);
   background: var(--pink-dark);
   margin-top: 0.5rem;
+  position: relative;
+  z-index: 0;
 }
+
+
+.semestral button::before {
+  position: absolute;
+  content: "";
+  height: 2.5rem;
+  width: 14rem;
+  z-index: 1;
+  top: -0.5rem;
+  left:0;
+  border-radius: 50%;
+  background: var(--text-title);
+  margin-top: 0.5rem;
+  opacity: 0;
+  transform: scale(0.1);
+  transition-property: transform opacity border-radius;
+  transition-duration: 500ms;
+  transition-timing-function: ease;  
+}
+
+.semestral button:hover::before {
+
+  transform: scale(1);
+  opacity: .1;
+  border-radius: 8px;
+}
+
+
 
 .semestral {
   position: relative;
@@ -262,7 +292,34 @@ gap: 0.5rem;
   font: var(--tt-button);
   background: var(--blue-dark);
   margin-top: 0.5rem;
+  position: relative;
 }
+
+.anual button::before {
+  position: absolute;
+  content: "";
+  height: 2.5rem;
+  width: 14rem;
+  z-index: 1;
+  top: -0.5rem;
+  left:0;
+  border-radius: 50%;
+  background: var(--text-title);
+  margin-top: 0.5rem;
+  opacity: 0;
+  transform: scale(0.1);
+  transition-property: transform opacity border-radius;
+  transition-duration: 500ms;
+  transition-timing-function: ease;  
+}
+
+.anual button:hover::before {
+
+  transform: scale(1);
+  opacity: .1;
+  border-radius: 8px;
+}
+
 
 
 
@@ -365,6 +422,35 @@ gap: 0.5rem;
   font: var(--tt-button);
   background: var(--blue-dark);
   margin-top: 0.5rem;
+  position: relative;
+}
+
+
+
+
+.mensal button::before {
+  position: absolute;
+  content: "";
+  height: 2.5rem;
+  width: 14rem;
+  z-index: 1;
+  top: -0.5rem;
+  left:0;
+  border-radius: 50%;
+  background: var(--text-title);
+  margin-top: 0.5rem;
+  opacity: 0;
+  transform: scale(0.1);
+  transition-property: transform opacity border-radius;
+  transition-duration: 500ms;
+  transition-timing-function: ease;  
+}
+
+.mensal button:hover::before {
+
+  transform: scale(1);
+  opacity: .1;
+  border-radius: 8px;
 }
 
 .mensal .small-mensal {

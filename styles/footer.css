@@ -1,8 +1,10 @@
 footer {
 padding: 0;
 margin: 0;
-border: 2px solid blue;
+
  height: 25.93rem;
+
+ background-color: var(--shape-base);
 
  display: flex;
  justify-content: space-between;
@@ -17,7 +19,7 @@ border: 2px solid blue;
  height: 8.125rem;
  margin-top: 10.625rem;
  margin-left: 10rem;
- border: 2px solid salmon;
+
  position: relative;
   z-index: 1;
  
@@ -37,7 +39,9 @@ border: 2px solid blue;
  & .social {
 
   display: flex;
+  gap: 0.5rem;
   height: 2.5rem;
+  margin-top: 0.75rem;
  } 
 }
 
@@ -45,19 +49,37 @@ border: 2px solid blue;
 
   height: 2.5rem;
   width: 2.5rem;
+  background: transparent;
+  /* color: var(--blue-base); */
+  border-radius: 999px;
+  border: none;
+
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    background: var(--shape-stroke);
   }
 
+  & img {
+    filter: hue-rotate(90deg);
+  }
+  }
 
-footer::before {
-  content: "";
-  inset: 0;
-  position: absolute;
-  background-image: url(/assets/Background-Vector.svg);
-  z-index: 0;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+.social button img {
+  filter: invert(38%) sepia(34%) saturate(432%) hue-rotate(160deg) brightness(95%) contrast(90%);
+  transition: filter 1s ease;
 }
+
+.social button:hover img { 
+  filter: inherit;
+}
+
+
+
+
 
 
 
@@ -75,7 +97,7 @@ footer::before {
  height: 8.9375rem;
   margin-top: 10.625rem;
  margin-right: 10rem;
- border: 2px solid yellow;
+
 
   position: relative;
   z-index: 1;
@@ -83,4 +105,45 @@ footer::before {
   display: flex;
   justify-content: space-between;
 
+& .conteúdo li:nth-child(1) {
+
+  font: var(--title-xs);
+  color: var(--text-body);
+  margin-bottom: 1.25rem;
 }
+
+& .ajuda li:nth-child(1) {
+
+  font: var(--title-xs);
+  color: var(--text-body);
+  margin-bottom: 1.25rem;
+}
+}
+
+.ajuda, .conteúdo {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;  
+}
+
+.ajuda li, .conteúdo li {
+  list-style: none;  
+  
+}
+
+.ajuda li a, .conteúdo li a {
+  font: var(--tt-link);
+  color: var(--blue-light);
+  text-decoration: none;
+  transition: color 500ms ease;
+}
+
+
+.ajuda li:hover a, .conteúdo li:hover a {
+ 
+  color: var(--text-body);
+
+}
+
+
+
